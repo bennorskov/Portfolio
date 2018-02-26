@@ -1,0 +1,33 @@
+// ——————————— UI Basics ——————————— //
+.ui
+	@at-root #{&}__button
+		width: 100%
+		height: 100%
+		stroke: $white
+		stroke-width: 1
+		fill: $white
+		@at-root #{&}--hamburger
+			display: none
+		@at-root #{&}--arrow
+			display: block
+	@at-root #{&}__navigationPulldown
+		display: block
+		width: $standardWidth
+		height: $standardWidth
+		position: absolute
+		top: $standardHeight*4
+		right: 50vw - $standardWidth * .5
+		+animate(top, .3s)
+		&.beforeLoad
+			top: $standardHeight*3
+	@at-root #{&}__navArrow
+		stroke: $white
+		stroke-width: 1
+		fill: $white
+		height: $standardWidth
+		width: $standardWidth
+.navigation.collapsed
+	.ui__button--hamburger
+		display: block
+	.ui__button--arrow
+		display: none
