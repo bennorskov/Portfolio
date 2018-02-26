@@ -1,0 +1,60 @@
+// ——————————— Top Menu ——————————— //
+.navigation 
+	width: 100%
+	height: $standardHeight*4
+	display: block
+	position: fixed
+	z-index: 10
+	top: 0
+	+animate(top, .3s)
+	.icon.hamburger
+		display: none
+	.icon.arrow
+		display: block
+	&.collapsed
+		top: $standardHeight * -4
+		.icon.arrow
+			display: none
+		.icon.hamburger
+			display: block
+	.menu
+		list-style: none
+		padding-top: $standardHeight
+		+animate(left, .3s)
+		.link 
+			display: block
+			margin-left: $standardWidth
+			font-size: $standardHeight - 2
+			color: $white
+			.navArrow
+				stroke: $white
+				stroke-width: 1
+				fill: $white
+				height: $standardWidth
+				width: $standardWidth
+			&:hover, &.current
+				text-decoration: underline
+	.mainMenu
+		display: block
+		position: relative
+		left: 0
+		top: 0
+	.secondaryMenu
+		display: block
+		position: absolute
+		left: 100vw
+		top: 0
+		padding-top: 0
+		.link
+			margin-left: $standardWidth * 2
+			font-size: $standardHeight - 3
+			&.backArrow
+				position: absolute
+				top: $standardHeight * 2 + 2
+				left: 1vw
+				margin-left: 0
+	&.showSecondaryMenu
+		.mainMenu
+			left: -100vw
+		.secondaryMenu
+			left: 0

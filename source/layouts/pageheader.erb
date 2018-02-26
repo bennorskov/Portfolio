@@ -1,0 +1,40 @@
+%!DOCTYPE html
+%html{lang=>"en"}
+%head
+	%meta{charset=>"UTF-8"}
+	%meta{name=>"viewport", content=>"width=device-width, initial-scale=1"}
+	%title Ben Norskov | Strategist and Interaction Designer
+	%link{href=>"https://fonts.googleapis.com/css?family=Abel", rel=>"stylesheet"}
+	%link{rel=>"stylesheet", type=>"text/css", href=>"style.css", media=>"screen"}
+	%link{rel=>"stylesheet", type=>"text/css", href=>"widescreen.css", media=>"screen and (min-width:800px)"}
+	%script{type=>"text/Javascript", src=>"jquery-3.3.1.min.js"}
+%body
+	%nav.navigation.collapsed.ui
+		%ul.menu.mainMenu
+			%li.link.about About
+			%li.link.slideMenuNavButton Work
+				%svg.navArrow
+					%line{::x1=>"90%", :y1=>"50%", :x2=>"60%", :y2=>"70%"}
+					%line{::x1=>"90%", :y1=>"50%", :x2=>"60%", :y2=>"30%"}
+					%line{::x1=>"20%", :y1=>"50%", :x2=>"90%", :y2=>"50%"}
+			%li.link.contact Contact
+		%ul.menu.secondaryMenu
+			%li.link.backArrow.slideMenuNavButton
+				%svg.navArrow
+					%line{:x1=>"20%" :y1=>"50%" :x2=>"40%" :y2=>"70%"}
+					%line{:x1=>"20%" :y1=>"50%" :x2=>"40%" :y2=>"30%"}
+					%line{:x1=>"20%" :y1=>"50%" :x2=>"90%" :y2=>"50%"}
+			%li.link Antidote
+			%li.link Kailas
+			%li.link AMNH
+			%li.link Souvenir
+			%li.link Magnitude
+		%a.ui.button.navigationPulldown.beforeLoad
+			%svg.icon.hamburger
+				%line{:x1=>"30%" :y1=>"30%" :x2=>"70%" :y2=>"30%"}
+				%line{:x1=>"10%" :y1=>"50%" :x2=>"90%" :y2=>"50%"}
+				%line{:x1=>"30%" :y1=>"70%" :x2=>"70%" :y2=>"70%"}
+			%svg.icon.arrow
+				%line{:x1=>"30%" :y1=>"40%" :x2=>"50%" :y2=>"20%"}
+				%line{:x1=>"70%" :y1=>"40%" :x2=>"50%" :y2=>"20%"}
+				%line{:x1=>"50%" :y1=>"20%" :x2=>"50%" :y2=>"90%"}
