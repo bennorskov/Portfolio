@@ -15,11 +15,11 @@
 		width: $standardWidth
 		height: $standardWidth
 		position: absolute
-		top: $standardHeight*4
+		top: $standardHeight * $navigationItemCount
 		right: 50vw - $standardWidth * .5
 		+animate(top, .3s)
 		&.beforeLoad
-			top: $standardHeight*3
+			top: $standardHeight * $navigationItemCount - 1
 	@at-root #{&}__navArrow
 		stroke: $white
 		stroke-width: 1

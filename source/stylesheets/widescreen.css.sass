@@ -1,16 +1,10 @@
-@import template
+@import partials/template
 .ui
-	.navigationPulldown
-		display: block
+	@at-root #{&}__navigationPulldown
 		width: $standardWidth * .5
 		height: $standardWidth * .5
-		position: absolute
-		top: $standardHeight*4
 		right: 50vw - $standardWidth * .25
 
-.navigation 
-	.menu
-		.link 
-			.navArrow
-				height: $standardWidth - 3
-				width: $standardWidth - 3
+	@at-root #{&}__navArrow
+		height: $standardWidth - 3
+		width: $standardWidth - 3

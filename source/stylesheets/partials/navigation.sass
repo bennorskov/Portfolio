@@ -1,14 +1,15 @@
 // ——————————— Top Menu ——————————— //
 .navigation 
 	width: 100%
-	height: $standardHeight*4
+	height: $standardHeight * $navigationItemCount
 	display: block
 	position: fixed
 	z-index: 10
 	top: 0
 	background: $bgTransparent
+	letter-spacing: -4px
 	&.collapsed
-		top: $standardHeight * -4
+		top: $standardHeight * -$navigationItemCount
 	+animate(top, .3s)
 	@at-root #{&}__menu
 		display: block
