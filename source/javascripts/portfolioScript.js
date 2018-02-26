@@ -1,18 +1,14 @@
 $(document).ready(function() {
 	setTimeout(function () {
-		$(".navigationPulldown").removeClass("beforeLoad");
+		$(".ui__navigationPulldown").removeClass("beforeLoad");
 	}, 300);
 	//Scroll in after page load to show what's possible
 
-	$(".navigationPulldown").on("click", function() { 
+	$(".ui__navigationPulldown").on("click", function() { 
 		showNav(); 
 	});
-	$(".link").on("click", function () {
-		if ($(this).hasClass("slideMenuNavButton")) {
-			slideMenus();
-		} else {
-			showNav();
-		}
+	$(".slideMenuNavButton").on("click", function () {
+		slideMenus();
 	});
 });
 
