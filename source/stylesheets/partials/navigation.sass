@@ -7,14 +7,13 @@
 	z-index: 10
 	top: 0
 	background: $bgTransparent
-	letter-spacing: -4px
 	&.collapsed
 		top: $standardHeight * -$navigationItemCount
 	+animate(top, .3s)
 	@at-root #{&}__menu
 		display: block
 		list-style: none
-		padding-top: $standardHeight
+		padding-top: $standardHeight * .5
 		top: 0
 		+animate(left, .3s)
 		@at-root #{&}--link 
@@ -24,7 +23,7 @@
 			color: $white
 			a
 				text-decoration: none 
-			&:hover, &.current
+			&:hover
 				text-decoration: underline
 	@at-root #{&}__mainMenu
 		position: relative
@@ -36,11 +35,19 @@
 		@at-root #{&}--link
 			margin-left: $standardWidth * 2
 			font-size: $standardHeight - 3
+			a
+				text-decoration: none 
+				&:hover img
+					opacity: 1
+			img
+				opacity: 0
+				+animate(opacity, .3s)
 		@at-root #{&}--backArrow
 			position: absolute
 			top: $standardHeight * 2 + 2
 			left: 1vw
 			margin-left: 0
+			cursor: pointer		
 
 	&.showSecondaryMenu
 		.navigation__mainMenu

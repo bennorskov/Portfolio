@@ -1,65 +1,49 @@
 <nav class="navigation collapsed">
     <ul class="navigation__menu navigation__mainMenu">
       <li class="navigation__menu--link"><a href="index.html">About</a></li>
-      <li class="navigation__menu--link slideMenuNavButton__antidote">Antidote Work
-        <svg class="ui__navArrow">
-          <line x1="90%" y1="50%" x2="60%" y2="70%"></line>
-          <line x1="90%" y1="50%" x2="60%" y2="30%"></line>
-          <line x1="20%" y1="50%" x2="90%" y2="50%"></line>
-        </svg>
+      <li class="navigation__menu--link"><a href="index.html">Contact</a></li>
+      <li class="navigation__menu--link slideMenuNavButton__antidote">Antidote
+        <%= partial "rightNavArrow" %>
       </li>
-      <li class="navigation__menu--link slideMenuNavButton__personal">Personal Work
-        <svg class="ui__navArrow">
-          <line x1="90%" y1="50%" x2="60%" y2="70%"></line>
-          <line x1="90%" y1="50%" x2="60%" y2="30%"></line>
-          <line x1="20%" y1="50%" x2="90%" y2="50%"></line>
-        </svg>
+      <li class="navigation__menu--link slideMenuNavButton__personal">Personal
+        <%= partial "rightNavArrow" %>
       </li>
-      <li class="navigation__menu--link contact"><a href="index.html">Contact</a></li>
     </ul>
-    # -- -- -- -- -- -- -- -- -- -- Antidote Menu 
+   
+    <!-- -- -- -- -- -- -- -- -- -- Antidote Menu -->
     <ul class="navigation__secondaryMenu navigation__menu navigation__secondaryMenu--antidoteMenu">
       <li class="navigation__secondaryMenu--link navigation__secondaryMenu--backArrow slideMenuNavButton">
-        <svg class="ui__navArrow">
-          <line x1="20%" y1="50%" x2="40%" y2="70%"></line>
-          <line x1="20%" y1="50%" x2="40%" y2="30%"></line>
-          <line x1="20%" y1="50%" x2="90%" y2="50%"></line>
-        </svg>
+        <%= partial "leftNavArrow" %>
       </li>
-      <li class="navigation__secondaryMenu--link">Antidote</li>
-      <li class="navigation__secondaryMenu--link"><a href="Kailas.html">Kailas</a></li>
-      <li class="navigation__secondaryMenu--link">Urgent Mission</li>
-      <li class="navigation__secondaryMenu--link">Souvenir</li>
-      <li class="navigation__secondaryMenu--link">Magnitude</li>
+      <li class="navigation__secondaryMenu--link"><a href="http://playistheantidote.com">Antidote</a></li>
+      <li class="navigation__secondaryMenu--link"><a href="/kailas/index.html">Kailas</a></li>
+      <!-- li class="navigation__secondaryMenu--link">Urgent Mission</li -->
+      <li class="navigation__secondaryMenu--link"><a href="magnitude.html">Magnitude</a></li>
     </ul>
 
-    # -- -- -- -- -- -- -- -- -- -- Personal Menu 
+    <!-- -- -- -- -- -- -- -- -- -- Personal Menu -->
     <ul class="navigation__secondaryMenu navigation__menu navigation__secondaryMenu--personalMenu">
-      <li class="navigation__secondaryMenu--link navigation__secondaryMenu--backArrow slideMenuNavButton">
-        <svg class="ui__navArrow">
-          <line x1="20%" y1="50%" x2="40%" y2="70%"></line>
-          <line x1="20%" y1="50%" x2="40%" y2="30%"></line>
-          <line x1="20%" y1="50%" x2="90%" y2="50%"></line>
-        </svg>
-      </li>
-      <li class="navigation__secondaryMenu--link">Personal</li>
-      <li class="navigation__secondaryMenu--link">NED</li>
-      <li class="navigation__secondaryMenu--link">AMNH</li>
-      <li class="navigation__secondaryMenu--link">Souvenir</li>
-      <li class="navigation__secondaryMenu--link">Magnitude</li>
+		<li class="navigation__secondaryMenu--link navigation__secondaryMenu--backArrow slideMenuNavButton">
+		<%= partial "leftNavArrow" %>
+		</li>
+		<li class="navigation__secondaryMenu--link">Personal</li>
+		<li class="navigation__secondaryMenu--link"><a href="ned.html">NED</a></li>
+		<li class="navigation__secondaryMenu--link"><a href="pterosaurs.html">AMNH</a></li>
+		<li class="navigation__secondaryMenu--link"><a href="http://playsouvenir.com">Souvenir</a></li>
+		<li class="navigation__secondaryMenu--link"><a href="pyramid.html">Pyramidion</a></li>
     </ul>
 
-    # -- -- -- -- -- -- -- -- -- -- Dropdown Arrow
-    <a class="ui__button ui__navigationPulldown beforeLoad">
+    <!-- -- -- -- -- -- -- -- -- -- Dropdown Arrow -->
+    <a class="ui__navigationPulldown beforeLoad">
       <svg class="ui__button ui__button--hamburger">
         <line x1="30%" y1="30%" x2="70%" y2="30%"></line>
         <line x1="10%" y1="50%" x2="90%" y2="50%"></line>
         <line x1="30%" y1="70%" x2="70%" y2="70%"></line>
       </svg>
       <svg class="ui__button ui__button--arrow">
-        <line x1="30%" y1="40%" x2="50%" y2="20%"></line>
-        <line x1="70%" y1="40%" x2="50%" y2="20%"></line>
-        <line x1="50%" y1="20%" x2="50%" y2="90%"></line>
+        <line x1="20%" y1="40%" x2="50%" y2="10%"></line>
+        <line x1="80%" y1="40%" x2="50%" y2="10%"></line>
+        <line x1="50%" y1="35%" x2="50%" y2="90%"></line>
       </svg>
     </a>
 </nav>

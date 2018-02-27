@@ -10,18 +10,36 @@
 	background-size: auto 100vh
 	background-position: 50% 0
 	background-repeat: no-repeat
-	padding-top: $standardHeight
+	padding-top: $standardHeight * .5
 	padding-left: $standardWidth
+	padding-right: $standardWidth * .5
+	position: relative
 	@at-root #{&}__bigHeading
 		font-weight: bold
 		font-size: $standardHeight + 2
+		position: absolute
+		bottom: 5vh
+		line-height: 1em
 	@at-root #{&}__smallHeading
-		font-size: $standardHeight *.5
+		font-size: $standardHeight * .5
 	@at-root #{&}__description
-		text-indent: .5vw
-		margin-bottom: .1vw
+		text-indent: 2em
+		margin-bottom: 1em
 
 .intro 
-	background-image: url(../images/tester.png)
-	padding-top: $standardHeight * 3
+	background: linear-gradient(45deg, #1a8cbc, #d8aaa9)
+	padding-top: 65vh
 	
+.about
+	background-image: url(../images/headshot.jpg)
+	.fullscreen__bigHeading
+		opacity: 1
+		+animate(opacity, .3s)
+	&.showGradient
+		background: linear-gradient(-45deg, #1a8cbc, #d8aaa9)
+		.fullscreen__bigHeading
+			opacity: .3
+
+.contact
+	background: linear-gradient(to bottom, #1a8cbc, #d8aaa9)
+	padding-top: 68vh

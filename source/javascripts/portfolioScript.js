@@ -1,8 +1,11 @@
+var $intro;
 $(document).ready(function() {
 	setTimeout(function () {
 		$(".ui__navigationPulldown").removeClass("beforeLoad");
 	}, 300);
 	//Scroll in after page load to show what's possible
+	$intro = $(".intro");
+	setInterval(function() {animateBackground()}, 30);
 
 	$(".ui__navigationPulldown").on("click", function() { 
 		showNav(); 
@@ -15,6 +18,11 @@ $(document).ready(function() {
 	});
 	$(".slideMenuNavButton").on("click", function () {
 		slideMenus();
+	});
+
+	showHideAbout(); //hide about text at first
+	$(".about .fullscreen__bigHeading").on("click", function() {
+		showHideAbout();
 	});
 });
 
@@ -36,4 +44,16 @@ function slideMenus(_type) {
 	} else {
 		$(".navigation").removeClass("showSecondaryMenu");
 	}
+}
+var angleStep = .5;
+var startAngl = 45;
+function animateBackground() {
+	startAngl -= angleStep;
+	$intro.css("background", "linear-gradient("+startAngl+"deg, #1a8cbc, #d8aaa9)");
+}
+
+function showHideAbout() {
+	$(".about .fullscreen__description").fadeToggle();
+	$(".ui__aboutArrow").toggleClass("rotated");
+	$(".about").toggleClass("showGradient");
 }
