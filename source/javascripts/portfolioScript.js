@@ -10,7 +10,9 @@ $(document).ready(function() {
 	$(".ui__navigationPulldown").on("click", function() { 
 		showNav(); 
 	});
-
+	$(".hi").on("click", function() {
+		scrollPage(".about");
+	});
 	$(".slideMenuNavButton__contact").on("click", function() {
 		scrollPage(".contact")
 	});
