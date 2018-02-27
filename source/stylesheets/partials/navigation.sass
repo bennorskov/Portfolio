@@ -23,18 +23,16 @@
 			color: $white
 			a
 				text-decoration: none 
-			&:hover
-				text-decoration: underline
 	@at-root #{&}__mainMenu
 		position: relative
 		left: 0
 	@at-root #{&}__secondaryMenu
 		position: absolute
 		left: 100vw
-		padding-top: 0
+		padding-top: 5vh
 		@at-root #{&}--link
-			margin-left: $standardWidth * 2
-			font-size: $standardHeight - 3
+			margin-left: $standardWidth + 5
+			font-size: $standardHeight - 2
 			a
 				text-decoration: none 
 				&:hover img

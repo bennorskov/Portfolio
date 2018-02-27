@@ -1,7 +1,7 @@
 <nav class="navigation collapsed">
     <ul class="navigation__menu navigation__mainMenu">
-      <li class="navigation__menu--link"><a href="index.html">About</a></li>
-      <li class="navigation__menu--link"><a href="index.html">Contact</a></li>
+      <li class="navigation__menu--link slideMenuNavButton__about">About</li>
+      <li class="navigation__menu--link slideMenuNavButton__contact">Contact</li>
       <li class="navigation__menu--link slideMenuNavButton__antidote">Antidote
         <%= partial "rightNavArrow" %>
       </li>
@@ -12,13 +12,13 @@
    
     <!-- -- -- -- -- -- -- -- -- -- Antidote Menu -->
     <ul class="navigation__secondaryMenu navigation__menu navigation__secondaryMenu--antidoteMenu">
-      <li class="navigation__secondaryMenu--link navigation__secondaryMenu--backArrow slideMenuNavButton">
-        <%= partial "leftNavArrow" %>
-      </li>
-      <li class="navigation__secondaryMenu--link"><a href="http://playistheantidote.com">Antidote</a></li>
-      <li class="navigation__secondaryMenu--link"><a href="/kailas/index.html">Kailas</a></li>
-      <!-- li class="navigation__secondaryMenu--link">Urgent Mission</li -->
-      <li class="navigation__secondaryMenu--link"><a href="magnitude.html">Magnitude</a></li>
+		<li class="navigation__secondaryMenu--link navigation__secondaryMenu--backArrow slideMenuNavButton">
+		<%= partial "leftNavArrow" %>
+		</li>
+		<li class="navigation__secondaryMenu--link"><a href="http://playistheantidote.com">Antidote</a></li>
+		<li class="navigation__secondaryMenu--link"><a href="/kailash">Kailas</a></li>
+		<li class="navigation__secondaryMenu--link"><a href="pterosaurs.html">AMNH</a></li>
+		<li class="navigation__secondaryMenu--link"><a href="magnitude.html">Magnitude</a></li>
     </ul>
 
     <!-- -- -- -- -- -- -- -- -- -- Personal Menu -->
@@ -26,11 +26,10 @@
 		<li class="navigation__secondaryMenu--link navigation__secondaryMenu--backArrow slideMenuNavButton">
 		<%= partial "leftNavArrow" %>
 		</li>
-		<li class="navigation__secondaryMenu--link">Personal</li>
 		<li class="navigation__secondaryMenu--link"><a href="ned.html">NED</a></li>
-		<li class="navigation__secondaryMenu--link"><a href="pterosaurs.html">AMNH</a></li>
 		<li class="navigation__secondaryMenu--link"><a href="http://playsouvenir.com">Souvenir</a></li>
 		<li class="navigation__secondaryMenu--link"><a href="pyramid.html">Pyramidion</a></li>
+		<li class="navigation__secondaryMenu--link"><a href="wall.html">Wall</a></li>
     </ul>
 
     <!-- -- -- -- -- -- -- -- -- -- Dropdown Arrow -->

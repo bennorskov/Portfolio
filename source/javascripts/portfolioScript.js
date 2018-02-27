@@ -10,6 +10,13 @@ $(document).ready(function() {
 	$(".ui__navigationPulldown").on("click", function() { 
 		showNav(); 
 	});
+
+	$(".slideMenuNavButton__contact").on("click", function() {
+		scrollPage(".contact")
+	});
+	$(".slideMenuNavButton__about").on("click", function() {
+		scrollPage(".about")
+	});
 	$(".slideMenuNavButton__personal").on("click", function () {
 		slideMenus("personal");
 	});
@@ -30,6 +37,10 @@ function showNav() {
 	$(".navigation").toggleClass("collapsed");
 	slideMenus();
 }
+function scrollPage(_where) {
+	$('html,body').animate({ scrollTop: $(_where).offset().top}, 'fast');
+}
+
 function slideMenus(_type) {
 	if (_type == "personal") {
 		$(".navigation__secondaryMenu--personalMenu").show();
@@ -56,4 +67,5 @@ function showHideAbout() {
 	$(".about .fullscreen__description").fadeToggle();
 	$(".ui__aboutArrow").toggleClass("rotated");
 	$(".about").toggleClass("showGradient");
+	$(".navigation").addClass("collapsed");
 }
