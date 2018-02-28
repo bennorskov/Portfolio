@@ -1,7 +1,11 @@
 <nav class="navigation collapsed">
     <ul class="navigation__menu navigation__mainMenu">
-      <li class="navigation__menu--link slideMenuNavButton__about">About</li>
-      <li class="navigation__menu--link slideMenuNavButton__contact">Contact</li>
+      <% if current_page.data.pageType.eql?("oldLayout") %>
+	      <li class="navigation__menu--link"><a href="index.html">Home</a></li>
+      <% else %>
+	      <li class="navigation__menu--link slideMenuNavButton__about">About</li>
+	      <li class="navigation__menu--link slideMenuNavButton__contact">Contact</li>
+      <% end %>
       <li class="navigation__menu--link slideMenuNavButton__antidote">Antidote
         <%= partial "rightNavArrow" %>
       </li>

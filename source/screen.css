@@ -1,0 +1,225 @@
+@charset "UTF-8";
+/* Ben Norskov
+	March 2011 */
+
+body {
+	background: url(images/tiled.png);
+	font-family: 'Josefin Slab', serif;
+}
+h1 {
+	position: fixed;
+	top: 130px;
+	letter-spacing: 2px;
+	font-size: 20px;
+	color: #555;
+}
+h1 a {
+	color: #555;
+	text-decoration: none;
+}
+span.hidden {
+    display: none;
+}
+/*  ************************************  NAVIGATION */
+div#nav {
+	width: 208px;
+	height: 140px;
+	z-index: 1;
+	position: fixed;
+	top: 170px;
+	left: 20px;
+	background: url(images/tiled90.png);
+	font-size: 18px;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 10px 0px 10px 20px;
+	color: #555;
+}
+div#nav ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+div#nav li, a {	
+	color: #555;
+	margin: 5px 0;
+	text-decoration: none;
+}
+div#nav li.games a:hover {
+	color: #000;
+	text-shadow: #F00 0 0 2px;
+}
+div#nav li.install a:hover {
+	color: #000;
+	text-shadow: #0F0 0 0 2px;
+}
+div#nav li.contact a:hover {
+	color: #000;
+	text-shadow: #00F 0 0 2px;
+}
+div#nav li.old a:hover {
+	color: #000;
+	text-shadow: #666 0 0 2px;
+}
+div#nav li.all {
+	display: none;
+}
+div#nav li.all:hover {
+	color: #000;
+	text-shadow: #ff0 0 0 2px;
+}
+div#nav li:hover {
+	color: #000;
+	text-shadow: #f90 0 0 2px;
+}
+
+div#nav li img {
+	width: 16px;
+	margin-left: 5px;
+}
+/*  ************************************  HOLDER DIVS */
+
+div.holder-div {
+	z-index: 10;
+	background: url(images/50_per_bg.png);
+	width: 800px;
+	height: 300px;
+	margin-left: 260px;
+	margin-top: 10px;
+}
+div.holder-div h2 {
+	margin: 0;
+	background: url(images/50_per_bg.png);
+	max-width: 400px;
+	position: relative;
+	top: 217px;
+	font-weight: 100;
+	text-align: center;
+	padding: 12px 10px 8px;
+	color: white;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+div.holder-div h2 a {
+	color: white;
+	text-decoration: none;
+	width: 100%;
+	text-transform: uppercase;
+}
+
+div.holder-div h2 img.external {
+	position: absolute;
+	right: 12px;
+	top: 12px;
+	transition: all .4s;
+	width: 20px;
+	opacity: 0;
+}
+
+	div.holder-div h2:hover img.external {
+		opacity: 1;
+	}
+div.holder-div h2.wide {
+	width: 400px;
+}
+div.holder-div h2:hover {
+	background: #343434;
+}
+/*  ********************************  INDIVIDUAL BACKGROUNDs */
+
+div#antidote {
+	background-image: url(images/antidote/title.png);
+}
+div#pterosaur {
+	background-image: url(images/pterosaurs/title.jpg);
+}
+div#souvenir {
+	background-image: url(images/souvenir/title.jpg);
+}
+div#pyramid {
+	background-image: url(images/pyramid/title.jpg);
+}
+div#magnitude {
+	background-image: url(images/magnitude/title.png);
+}
+div#book {
+	background-image: url(images/book/title.png);
+}
+div#wall {
+	background-image: url(images/wall/title.jpg);
+	}
+div#ned {
+	background-image: url(images/ned/title.jpg);
+	}
+div#older {
+	background-image: url(images/old.png);
+	}
+/*  ************************************  Contact section */
+div.contact {
+	position: relative;
+	color: white;
+	font-size: 16px;
+}
+div.contact div.about {
+	padding: 10px 20px;
+	margin-top: -35px;
+    font-family: 'Sorts Mill Goudy', serif;
+}
+div.contact div.info {
+	margin: 0;
+	padding: 12px 10px 8px;
+	letter-spacing: 2px;
+	line-height: 20px;
+	font-weight: 100;
+	float: right;		
+	position: absolute;
+	top: 210px;
+	left: 490px;
+	text-align:right;
+}
+div.contact div h3 {
+	margin: 0;
+	padding: 0;
+}
+div.contact div p {
+	color: white;
+	line-height: 20px;
+	margin: 6px 0;
+}
+/*  ************************************  Individual Pages */
+div.description a {
+	color: white;
+	text-decoration: underline;
+}
+div.description {
+	color: white;
+	line-height: 20px;
+	width: 770px;
+	height: auto;
+	padding: 15px;
+}
+div#pic1.pyramid { background: url(images/pyramid/pic1.jpg) }
+div#pic2.pyramid { background: url(images/pyramid/pic2.jpg) }
+div#pic3.pyramid { background: url(images/pyramid/pic3.jpg) }
+
+div#pic1.book { background: url(images/book/pic1.jpg) }
+div#pic2.book { background: url(images/book/pic2.jpg) }
+div#pic3.book { background: url(images/book/pic3.jpg) }
+
+div#pic1.ned { background: url(images/ned/pic1.jpg) }
+div#pic2.ned { background: url(images/ned/pic2.jpg) }
+div#pic3.ned { background: url(images/ned/pic3.jpg) }
+
+div#pic1.pterosaur { background: url(images/pterosaurs/pic1.jpg) }
+div#pic2.pterosaur { background: url(images/pterosaurs/pic2.jpg) }
+div#pic3.pterosaur { 
+	background: url(images/pterosaurs/pic3.jpg); 
+	height: 550px;
+}
+
+div#pic1.magnitude { background: url(images/magnitude/pic1.jpg) }
+div#pic2.magnitude { background: url(images/magnitude/pic2.jpg) }
+
+div#pic1.wall {
+	height: 400px
+}

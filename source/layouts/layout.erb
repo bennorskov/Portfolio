@@ -7,6 +7,9 @@
   <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="stylesheets/style.css" media="screen">
   <link rel="stylesheet" type="text/css" href="stylesheets/widescreen.css" media="screen and (min-width:800px)">
+  <% if current_page.data.pageType.eql?("oldLayout") %>
+    <link rel="stylesheet" type="text/css" href="screen.css" media="screen">
+  <% end %>
 </head>
 <body>
   <%= partial "navigation" %>
