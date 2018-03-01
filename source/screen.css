@@ -1,9 +1,7 @@
 @charset "UTF-8";
-/* Ben Norskov
-	March 2011 */
 
 body {
-	background: url(images/tiled.png);
+	background: linear-gradient(45deg, #1a8cbc, #d8aaa9);
 	font-family: 'Josefin Slab', serif;
 }
 h1 {
@@ -41,7 +39,7 @@ div#nav ul {
 	margin: 0;
 }
 div#nav li, a {	
-	color: #555;
+	color: #f1f1f1;
 	margin: 5px 0;
 	text-decoration: none;
 }
