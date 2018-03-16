@@ -3,6 +3,7 @@
 body {
 	background: linear-gradient(45deg, #1a8cbc, #d8aaa9);
 	font-family: 'Josefin Slab', serif;
+	background-attachment: fixed;
 }
 h1 {
 	position: fixed;
@@ -79,15 +80,12 @@ div#nav li img {
 
 div.holder-div {
 	z-index: 10;
-	background: url(images/50_per_bg.png);
 	width: 800px;
 	height: 300px;
-	margin-left: 260px;
-	margin-top: 10px;
+	margin: 10px auto;
 }
 div.holder-div h2 {
 	margin: 0;
-	background: url(images/50_per_bg.png);
 	max-width: 400px;
 	position: relative;
 	top: 217px;
@@ -120,7 +118,7 @@ div.holder-div h2 img.external {
 div.holder-div h2.wide {
 	width: 400px;
 }
-div.holder-div h2:hover {
+div.holder-div h2 {
 	background: #343434;
 }
 /*  ********************************  INDIVIDUAL BACKGROUNDs */
