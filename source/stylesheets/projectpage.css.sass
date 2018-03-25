@@ -1,0 +1,26 @@
+@import partials/template
+
+$holderDivWidth: 85%
+
+div.holder-div 
+	width: $holderDivWidth
+	max-width: 1000px
+	margin: $standardHeight auto
+	img 
+		width: 100%
+	h2.wide 
+		margin: 0
+		max-width: 400px
+		position: relative
+		top: 217px
+		font-weight: 100
+		text-align: center
+		padding: 12px 10px 8px
+		color: white
+		letter-spacing: 2px
+		text-transform: uppercase
+	&.description p
+		text-indent: 2em
+		margin-bottom: 1em
+	&:first
+		margin-top: $standardHeight * 2

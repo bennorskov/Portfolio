@@ -4,8 +4,8 @@ $(document).ready(function() {
 		$(".ui__navigationPulldown").removeClass("beforeLoad");
 	}, 300);
 	//Scroll in after page load to show what's possible
-	$intro = $(".intro");
-	setInterval(function() {animateBackground()}, 30);
+	$intro = $("body");
+	setInterval(function() {animateBackground()}, 40);
 
 	$(".ui__navigationPulldown").on("click", function() { 
 		showNav(); 
@@ -62,7 +62,7 @@ var angleStep = .5;
 var startAngl = 45;
 function animateBackground() {
 	startAngl -= angleStep;
-	$intro.css("background", "linear-gradient("+startAngl+"deg, #1a8cbc, #d8aaa9)");
+	$intro.css("background", "linear-gradient("+startAngl+"deg, #1a8cbc, #d8aaa9) fixed no-repeat");
 }
 
 function showHideAbout() {
