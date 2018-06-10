@@ -1,11 +1,12 @@
 var $intro;
+var rotateInterval
 $(document).ready(function() {
 	setTimeout(function () {
 		$(".ui__navigationPulldown").removeClass("beforeLoad");
 	}, 300);
 	//Scroll in after page load to show what's possible
 	$intro = $("body");
-	setInterval(function() {animateBackground()}, 40);
+	rotateInterval = setInterval(function() {animateBackground()}, 40);
 
 	$(".ui__navigationPulldown").on("click", function() { 
 		showNav(); 
