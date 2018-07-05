@@ -67,7 +67,18 @@ function slideMenus(_type) {
 	}
 }
 function showEmailOverlay() {
-		
+	// console.log("email clicked");
+	$(".ui__externalContact--emailNotification")
+		.animate({opacity: 1, top: "-8vh"}, 650, "linear")
+		.animate({opacity: 0, top: "-15vh"}, 250, "swing", function () {
+			$(this).css("top", 0);
+		});
+
+	navigator.clipboard.writeText("ben.norskov@gmail.com").then(function() {
+	  console.log('Email has copied to clipboard successfully!');
+	}, function(err) {
+	  console.error('Oh no! email is not in clipboard! ', err);
+	});
 }
 var angleStep = .5;
 var startAngl = 45;

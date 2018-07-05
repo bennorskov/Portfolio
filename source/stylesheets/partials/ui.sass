@@ -48,9 +48,16 @@
 	@at-root #{&}__externalContact
 		opacity: 1
 		display: inline-block
+		cursor: pointer
+		position: relative
 		+animate(opacity, .3s)
 		&:hover
 			opacity: .7
+		@at-root #{&}--emailNotification
+			position: absolute
+			top: 0
+			opacity: 0
+			width: inherit
 		svg
 			fill: $white
 			width: 22vw
