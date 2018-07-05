@@ -29,6 +29,9 @@ $(document).ready(function() {
 	$(".slideMenuNavButton").on("click", function () {
 		slideMenus();
 	});
+	$(".fullscreen__description--workClick").on("click", function() {
+		slideMenus();
+	});
 
 	showHideAbout(); //hide about text at first
 	$(".about .fullscreen__bigHeading").on("click", function() {
