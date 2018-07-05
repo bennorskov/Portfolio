@@ -30,12 +30,16 @@ $(document).ready(function() {
 		slideMenus();
 	});
 	$(".fullscreen__description--workClick").on("click", function() {
-		slideMenus();
+		showNav();
 	});
 
 	showHideAbout(); //hide about text at first
 	$(".about .fullscreen__bigHeading").on("click", function() {
 		showHideAbout();
+	});
+
+	$(".ui__externalContact--emailClick").on("click", function () {
+		showEmailOverlay();
 	});
 });
 
@@ -61,6 +65,9 @@ function slideMenus(_type) {
 	} else {
 		$(".navigation").removeClass("showSecondaryMenu");
 	}
+}
+function showEmailOverlay() {
+		
 }
 var angleStep = .5;
 var startAngl = 45;

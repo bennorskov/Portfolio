@@ -20,6 +20,7 @@
 		position: absolute
 		bottom: 5vh
 		line-height: 1em
+		font-family: "Abel", sans-serif
 	@at-root #{&}__smallHeading
 		font-size: $standardHeight * .5
 	@at-root #{&}__description
@@ -41,7 +42,11 @@
 		background-image: none
 		.fullscreen__bigHeading
 			opacity: .3
+	.fullscreen__description--workClick
+		text-decoration: underline
+		cursor: pointer
 
 .contact
 	//background: linear-gradient(to bottom, #1a8cbc, #d8aaa9)
-	padding-top: 60vh
+	padding-top: 50vh
+	padding-right: 20vw
