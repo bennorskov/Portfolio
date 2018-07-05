@@ -74,11 +74,14 @@ function showEmailOverlay() {
 			$(this).css("top", 0);
 		});
 
-	navigator.clipboard.writeText("ben.norskov@gmail.com").then(function() {
-	  console.log('Email has copied to clipboard successfully!');
-	}, function(err) {
-	  console.error('Oh no! email is not in clipboard! ', err);
-	});
+	var textArea = document.createElement("textarea");
+	textArea.value = "ben.norskov@gmail.com";
+	document.body.appendChild(textArea);
+	textArea.focus();
+	textArea.select();
+
+	document.execCommand("copy");
+	document.body.removeChild(textArea);
 }
 var angleStep = .5;
 var startAngl = 45;
